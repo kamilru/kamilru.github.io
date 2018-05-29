@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'RalwayMedium';
+    src: url(fonts/Raleway-Medium.otf);
+}
+/* Custom */
+body {
+    color: white;
+}
+
+
+.navbar-custom {
+    background-color: rgba(3, 29, 73, 0.5);
+    font-family: 'RalwayMedium', sans-serif;
+    font-size: 1.1rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    border-bottom: 3px solid white;
+    -webkit-transition: .28s ease-in-out; */
+    /* transition: .28s ease-in-out; */
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white;
+    
+}
+
+.nav-link.active {
+    border-bottom: 3px solid white;
+}
+
+.navbar-light .navbar-toggler {
+    border: 2px solid white;
+}
+
+.header__background {
+    background-image: url(images/hero-01.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
+    height: 800px;
+}
+
+.technologies__container {
+    min-height: 400px;
+}
+
+.portfolio__background {
+    background-image: url(images/hero-02.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    height: 800px;
+}
+
+.text-black {
+    color: black !important; 
+}
+
+
