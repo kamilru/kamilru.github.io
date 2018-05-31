@@ -69,7 +69,7 @@ body {
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
     clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
-    height: 800px;
+    min-height: 800px;
 }
 
 .text-black {
