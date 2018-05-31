@@ -1,4 +1,3 @@
-//<![CDATA[
 $(function(){
             function onScrollInit( items, trigger ) {
                 items.each( function() {
@@ -23,4 +22,4 @@ $(function(){
             }
             onScrollInit( $('.os-animation') );
             onScrollInit( $('.staggered-animation'), $('.staggered-animation-container') );
-});//]]>  
+});
