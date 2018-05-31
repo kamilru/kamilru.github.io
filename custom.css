@@ -55,7 +55,7 @@ body {
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
-    min-height: 900px;
+    min-height: 800px;
 }
 
 .technologies__container {
@@ -80,7 +80,9 @@ body {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5)
 }
 
-h1 {
-    word-wrap: break-word;
+.display-3_5 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
