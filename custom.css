@@ -55,7 +55,7 @@ body {
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
-    min-height: 800px;
+    min-height: 900px;
 }
 
 .technologies__container {
