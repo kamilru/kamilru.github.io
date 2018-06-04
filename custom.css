@@ -126,3 +126,7 @@ hr {
 .btn-warning:hover {
     background-color: #ffc61a !important;
 }
+
+.about__container {
+    min-height: 400px;
+}
