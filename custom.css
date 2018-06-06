@@ -130,3 +130,13 @@ hr {
 .about__container {
     min-height: 400px;
 }
+
+.findme__background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-03.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    min-height: 800px;
+}
