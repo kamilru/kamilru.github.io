@@ -69,11 +69,22 @@ $('.img-fluid').click( function(){
               elementType: 'labels.text.fill',
               stylers: [{color: '#ffffff'}]
             },
-            {
-              featureType: 'poi',
-              elementType: 'labels.text.fill',
-              stylers: [{color: '#ffffff'}]
-            }
+              {
+                "elementType": "labels.text.fill",
+                "stylers": [
+                  {
+                    "color": "#ffffff"
+                  }
+                ]
+              },
+              {
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                  {
+                    "color": "#212121"
+                  }
+                ]
+              },
 	];
                 var mapOptions = {
                     // How zoomed in you want the map to start at (always required)
