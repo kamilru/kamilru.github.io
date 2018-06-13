@@ -45,3 +45,63 @@ $('.img-fluid').click( function(){
             $('#firstimage').modal({show:true});
         }
         )
+
+//maps
+  google.maps.event.addDomListener(window, 'load', init);
+        
+            function init() {
+               
+                var mapStyles = [
+		{ //hide all fills
+			elementType: 'geometry.fill',
+			stylers: [
+				{ visibility: 'off' }
+			]
+		},{
+			featureType: 'landscape.natural.landcover',
+			elementType: 'geometry.fill',
+			stylers: [
+				{ visibility: 'on' },
+			]
+		},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#ffffff'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#ffffff'}]
+            }
+	];
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 14,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(49.5746513, 20.343573), // New York
+                    mapTypeControl: false,
+                    streetViewControl: false,
+                    fullscreenControl: false,
+                    // How you would like to style the map. 
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles:mapStyles,
+    // The following line is essential for making the map background transparent:
+    backgroundColor: 'hsla(0, 0%, 0%, 0)', 
+                };
+
+                // Get the HTML DOM element that will contain your map 
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(49.5746513, 20.343573),
+                    map: map,
+                    title: 'Tutaj jestem!'
+                });
+            }
