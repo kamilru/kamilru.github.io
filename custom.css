@@ -175,3 +175,7 @@ hr {
 .goup__icon:hover {
     color: rgb(145, 205, 238);
 }
+
+.contactme__container {
+    min-height: 400px;
+}
