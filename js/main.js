@@ -116,3 +116,22 @@ $('.img-fluid').click( function(){
                     title: 'Tutaj jestem!'
                 });
             }
+
+//to the top button 
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#goup').fadeIn();
+            } else {
+                $('#goup').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#goup').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+
+});

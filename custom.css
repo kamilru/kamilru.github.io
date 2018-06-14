@@ -71,6 +71,10 @@ body {
     border: 2px solid white;
 }
 
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
 .header__background {
     background-image: url(images/hero-01.jpg);
     background-position: center;
@@ -90,8 +94,8 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
-    clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    -webkit-clip-path: polygon(0 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%, 0% 0%);
+    clip-path: polygon(0 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%, 0% 0%);
     min-height: 800px;
 }
 
@@ -113,8 +117,12 @@ body {
 
 hr {
     border: 2px solid rgb(56, 165, 224);
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 32%;
+    margin-right: 32%;
+}
+
+.hrwhite {
+    border-color: white;
 }
 
 .display-3_5 {
@@ -136,13 +144,29 @@ hr {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
-    clip-path: polygon(0 85%, 50% 100%, 100% 85%, 100% 0%, 50% 15%, 0% 0%);
+    -webkit-clip-path: polygon(0 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%, 0% 0%);
+    clip-path: polygon(0 90%, 50% 100%, 100% 90%, 100% 0%, 50% 10%, 0% 0%);
     min-height: 800px;
 }
 
 #map {
     width: 100%;
-    height: 500px;
+    height: 600px;
     border: none;
+}
+
+#goup {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+}
+
+.goup__icon {
+    color: rgb(56, 165, 224);
+}
+
+.goup__icon:hover {
+    color: rgb(145, 205, 238);
 }
