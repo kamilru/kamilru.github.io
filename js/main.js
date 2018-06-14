@@ -18,7 +18,7 @@ $(function(){
                         osElement.addClass('animated').addClass(osAnimationClass);
                         },{
                             triggerOnce: false,
-                            offset: '85%'
+                            offset: '80%'
                     });
                 });
             }
