@@ -87,7 +87,7 @@ body {
     background-repeat: no-repeat;
     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0 85%);
-    min-height: 800px;
+    height: 100vh;
 }
 
 .technologies__container {
@@ -178,4 +178,15 @@ hr {
 
 .contactme__container {
     min-height: 400px;
+}
+
+
+@media only screen and (max-width: 991px) {
+    nav {
+        position: static !important;
+    }
+    
+    .navbar-custom {
+        background-color: rgba(3, 29, 73, 1);
+    }
 }
