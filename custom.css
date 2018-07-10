@@ -196,6 +196,26 @@ hr {
     color: rgb(56, 200, 255);
 }
 
+.footer__background {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/wallpaper-2989910.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-clip-path: polygon(0 100%, 50% 100%, 100% 100%, 100% 0%, 50% 7%, 0% 0%);
+    clip-path: polygon(0 100%, 50% 100%, 100% 100%, 100% 0%, 50% 10%, 0% 0%);
+    min-height: 200px;
+}
+
+.footies {
+    -webkit-transition: all 8s linear;
+    transition: all 0.6s linear;
+}
+
+.footies:hover, .footies:focus {
+    transform: rotate(360deg);
+    color: rgb(56, 200, 255);
+}
+
 @media only screen and (max-width: 991px) {
     nav {
         position: static !important;
