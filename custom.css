@@ -94,6 +94,15 @@ body {
     min-height: 400px;
 }
 
+.technologies__icon {
+    transition: transform 0.4s linear;
+    cursor: pointer;
+}
+
+.technologies__icon:hover {
+    transform: rotate3d(0, 1, 0, 360deg);
+}
+
 .portfolio__background {
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero-02.JPG);
     background-position: center;
@@ -113,7 +122,7 @@ body {
 }
 
 .shadow-nohover {
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.5)
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)
 }
 
 .shadow-onhover-white:hover{
@@ -182,7 +191,7 @@ hr {
 
 
 .card-contact {
-    box-shadow: 0 0 30px 0.5px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     border-left: 15px solid rgb(56, 165, 224);
 }
 
@@ -208,11 +217,11 @@ hr {
 
 .footies {
     -webkit-transition: all 8s linear;
-    transition: all 0.6s linear;
+    transition: all 0.2s linear;
 }
 
 .footies:hover, .footies:focus {
-    transform: rotate(360deg);
+    transform: translateY(-5px);
     color: rgb(56, 200, 255);
 }
 
