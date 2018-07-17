@@ -125,8 +125,14 @@ body {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2)
 }
 
-.shadow-onhover-white:hover{
-    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.6)
+.shadow-onhover-white {
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+}
+
+.shadow-onhover-white:hover .img-fluid{
+   transform: scale(1.05);
 }
 
 hr {
