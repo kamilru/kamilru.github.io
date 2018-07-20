@@ -95,12 +95,14 @@ body {
 }
 
 .technologies__icon{
-    transition: transform 0.4s linear;
+    transition: all 0.4s linear;
     cursor: pointer;
+    filter: brightness(0%);
 }
 
 .card:hover .technologies__icon{
     transform: rotate3d(0, 1, 0, 360deg);
+    filter: brightness(100%);
 }
 
 .portfolio__background {
