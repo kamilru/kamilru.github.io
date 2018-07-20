@@ -94,12 +94,12 @@ body {
     min-height: 400px;
 }
 
-.technologies__icon {
+.technologies__icon{
     transition: transform 0.4s linear;
     cursor: pointer;
 }
 
-.technologies__icon:hover {
+.card:hover .technologies__icon{
     transform: rotate3d(0, 1, 0, 360deg);
 }
 
